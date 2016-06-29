@@ -15,7 +15,7 @@ class CentroComando {
     return this._onStatusChange;
   }
 
-  set onStatusChange(onStatusChange){
+  set onStatusChange(onStatusChange) {
     this._onStatusChange = onStatusChange;
   }
 

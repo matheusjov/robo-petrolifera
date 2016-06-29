@@ -3,15 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>Centro de comando</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/app.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-  <h1>Centro de comando</h1>
 
-  <input id="comandos" type="text" disabled>
-  <button id="andar">Andar</button>
-  <button id="procurar">Procurar</button>
-  <button id="enviar">Enviar</button>
+  <div class="container">
 
+    <div class="page-header">
+      <h1>Centro de Comando <small>Robô Petrofilera</small></h1>
+    </div>
+    <div id="inputComandos" class="form-group">
+      <h1><span class="label label-primary" id="feedback">Pronto</span></h1>
+      <!-- <input type="text" id="feedback" value="" disabled> -->
+    </div>
+    <div class="bolaantena">
+    </div>
+    <div class="antena">
+    </div>
+
+    <div class="controle">
+
+      <div class="visor col-md-12">
+        <div class="form-group">
+          <input class="form-control" id="comandos" type="text" disabled/>
+        </div>
+      </div>
+
+      <div class="row col-md-12 center-block">
+        <button class="btn col-md-6 btncomandos"  id="andar"><b>Andar</b></button>
+        <button class="btn col-md-6 btncomandos" id="procurar"><b>Procurar</b></button>
+      </div>
+
+      <div class="row col-md-12 center-block">
+        <button class="btn btn-default col-md-12 center-block btnenviar" id="enviar"><b>Enviar</b></button>
+      </div>
+
+    </div>
+
+    <div id="gifanda" class="form-group">
+      <!-- <input type="text" id="feedback" value=""> -->
+      <img src="../img/robo.gif" alt="" />
+    </div>
+
+    <div id="gifrecuperado" class="form-group">
+      <!-- <input type="text" id="feedback" value=""> -->
+      <img src="../img/robo-recuperado.png" alt="" />
+    </div>
+
+    <div id="gifocupado" class="form-group">
+      <!-- <input type="text" id="feedback" value=""> -->
+      <img src="../img/robo-ocupado.png" alt="" />
+    </div>
+
+    <div id="gifprocura" class="form-group">
+      <!-- <input type="text" id="feedback" value=""> -->
+      <img src="../img/robo-lupa.gif" alt="" />
+    </div>
+
+    <div id="gifcheio" class="form-group">
+      <!-- <input type="text" id="feedback" value=""> -->
+      <img src="../img/robo-cheio.png" alt="" />
+    </div>
+
+    <div id="gifextrair" class="form-group">
+      <!-- <input type="text" id="feedback" value=""> -->
+      <img src="../img/robo-coleta.gif" alt="" />
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
   <script src="js/app.js"></script>
 </body>

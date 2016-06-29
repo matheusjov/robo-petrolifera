@@ -34,5 +34,5 @@ io.on('connection', function(client) {
 });
 
 server.listen(3000, function () {
-  console.log('Paindel de controne disponível na porta 3000!');
+  console.log('Centro de controne disponível na porta 3000!');
 });

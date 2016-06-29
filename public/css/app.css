@@ -1,0 +1,88 @@
+.controle{
+  background-color: #455A64;
+  border: 1px solid;
+  width: 300px;
+  height: 260px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#gifextrair{
+  float: left;
+  margin-top: -250px;
+}
+#gifcheio{
+  float: right;
+  margin-top: -250px;
+}
+#gifcheio img{
+    height: 120px;
+}
+#gifocupado{
+  float: right;
+  margin-top: -250px;
+}
+#gifocupado img{
+    height: 120px;
+}
+#gifrecuperado{
+  float: left;
+  margin-top: -250px;
+}
+#gifrecuperado img{
+    height: 120px;
+}
+#inputComandos{
+  margin: 0 auto;
+}
+#gifanda{
+  float: right;
+  margin-top: -250px;
+}
+#gifanda img{
+  height: 120px;
+}
+#gifprocura{
+  float: left;
+  margin-top: -250px;
+}
+#gifprocura img{
+  height: 120px;
+}
+.visor{
+  margin-top: 20px;
+}
+.bolaantena{
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  margin: 0 auto;
+}
+.antena{
+  border-left: solid 3px;
+  height: 30px;
+  width: 0%;
+  margin: 0 auto;
+}
+#comandos{
+  background-color: #90EE90;
+}
+#andar{
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: #303F9F;
+  color: white;
+}
+#procurar{
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  float: right;
+  background-color: #00BCD4;
+  color: white;
+}
+#enviar{
+  margin-top: 30px;
+}

@@ -55,6 +55,8 @@ class Roboto {
   executarComando() {
     if (this.status == _STATUS.CHEIO) {
       this.notificarCentrais(_STATUS.CHEIO)
+      this.filaDeComandos = [];
+      this.centraisDeComandos = [];
     } else {
       let comando = this.filaDeComandos.shift();
       if (comando) {
