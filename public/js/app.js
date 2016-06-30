@@ -74,7 +74,10 @@
       gifrecuperado.style.display = "none";
       gifcheio.style.display = "block";
       gifextrair.style.display = "none";
-      feed = "Cheio!"
+      botaoAndar.disabled = true;
+      botaoProcurar.disabled = true;
+      botaoEnviar.disabled = true;
+      feed = "Cheio"
     }
 
     inputFeedback.innerHTML  = 'O robô está: ' + feed;
