@@ -21,6 +21,11 @@ io.on('connection', function(client) {
     client.emit('feedback', comando);
   };
 
+  client.on('statusInicial', function(teste){
+    centroComando.statusInicial(teste)
+      client.emit('feedback', teste);
+  });
+
   client.on('comandos', function(comandos) {
     if(!centroComando.enviarComandos(comandos)) {
       client.emit('feedback', 'Ocupado!');

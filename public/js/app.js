@@ -28,6 +28,9 @@
 
   socket.on('connect', function (data) {
     console.log('Conexão online!');
+
+    socket.emit('statusInicial', '');
+
   });
 
   socket.on('feedback', function(data) {
@@ -78,6 +81,8 @@
       botaoProcurar.disabled = true;
       botaoEnviar.disabled = true;
       feed = "Cheio"
+    } else if (data == 'teste'){
+      feed = 'charles';
     }
 
     inputFeedback.innerHTML  = 'O robô está: ' + feed;
@@ -103,4 +108,5 @@
       alert("informe os comandos")
     }
   };
+
 })(io, document);
