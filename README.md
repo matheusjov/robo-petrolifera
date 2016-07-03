@@ -1,4 +1,4 @@
-# robo-petrolifera - node.js e socket.io
+# robo-petrolifera - node.js and socket.io
 #install dependencies
 $npm install
 #start the server
