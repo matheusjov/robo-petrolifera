@@ -19,11 +19,6 @@ class CentroComando {
     this._onStatusChange = onStatusChange;
   }
 
-  statusInicial(teste){
-    console.log(teste);
-    return 'aki';
-  }
-
   enviarNotificacao(comando) {
     if (this._onStatusChange)
     this._onStatusChange(comando);
