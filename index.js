@@ -14,6 +14,7 @@ app.use('/', express.static('public'));
 
 io.on('connection', function(client) {
   console.log('Nova conexão');
+  client.emit('feedback', 'pronto');
 
   let centroComando = new CentroComando(client.id, roboto);
 

@@ -79,7 +79,9 @@
       botaoProcurar.disabled = true;
       botaoEnviar.disabled = true;
       feed = "Cheio"
-    } 
+    } else if (data == 'pronto') {
+      feed = "Pronto";
+    }
 
     inputFeedback.innerHTML  = 'O robô está: ' + feed;
     console.log('O robo está: ' + data);
